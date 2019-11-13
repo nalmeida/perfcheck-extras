@@ -1,0 +1,297 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/nicalmei/Work/perfcheck
+
+  # Export additional ENV variables
+  env:
+    recording: true
+
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 90
+
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 15
+
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+
+  # Quality
+  # 1 - 100
+  quality: 100
+
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      border: 0px black solid
+      boxShadow: none
+      margin: 0px
+
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Operator Mono, Monaco, Lucida Console, Ubuntu Mono, Monospace"
+
+  # The size of the font
+  fontSize: 16
+
+  # The height of lines
+  lineHeight: 1.2
+
+  # The spacing between letters
+  letterSpacing: 0.2
+
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+
+# Records, feel free to edit them
+records:
+  - delay: 1211
+    content: "\e]7;file://nalmeida/Users/nicalmei/Work/perfcheck\a"
+  - delay: 21
+    content: "\e[?1034h\e[0;31m⚡\e[m\e[01;34m ~/Work/perfcheck\e[35m master* \e[01;30m$\e[00m "
+  - delay: 50
+    content: 'n'
+  - delay: 50
+    content: p
+  - delay: 50
+    content: m
+  - delay: 50
+    content: ' '
+  - delay: 50
+    content: i
+  - delay: 50
+    content: 'n'
+  - delay: 50
+    content: s
+  - delay: 50
+    content: t
+  - delay: 50
+    content: a
+  - delay: 50
+    content: l
+  - delay: 50
+    content: l
+  - delay: 156
+    content: "\r\n"
+  - delay: 752
+    content: "\e[?25l"
+  - delay: 34
+    content: "\r\e[K\e[?25haudited 126 packages in 1.577s\r\nfound \e[92m0\e[0m vulnerabilities\r\n\r\n"
+  - delay: 16
+    content: "\e]7;file://nalmeida/Users/nicalmei/Work/perfcheck\a"
+  - delay: 15
+    content: "\e[0;31m⚡\e[m\e[01;34m ~/Work/perfcheck\e[35m master* \e[01;30m$\e[00m "
+  - delay: 2000
+    content: 'n'
+  - delay: 50
+    content: o
+  - delay: 50
+    content: d
+  - delay: 50
+    content: e
+  - delay: 50
+    content: ' '
+  - delay: 50
+    content: g
+  - delay: 50
+    content: e
+  - delay: 50
+    content: t
+  - delay: 50
+    content: h
+  - delay: 50
+    content: a
+  - delay: 50
+    content: r
+  - delay: 50
+    content: "\r\n"
+  - delay: 1000
+    content: "14:06:730\t----------- Capturing HAR -----------\r\n14:06:790\tCreating \"har-files/2019.11.12-14.06.790\" folder\r\n\r\n"
+  - delay: 1000
+    content: "14:07:126\tURL:\thttps://github.com/\r\n"
+  - delay: 150
+    content: "14:07:240\tHAR:\thar-files/2019.11.12-14.06.790/chrome-1280/0_!.har\r\n"
+  - delay: 150
+    content: "14:07:897\tURL:\thttps://github.com/\r\n"
+  - delay: 150
+    content: "14:07:592\tHAR:\thar-files/2019.11.12-14.06.790/iphone-6/0_!.har\r\n"
+  - delay: 150
+    content: "14:07:675\tURL:\thttps://github.com/enterprise\r\n"
+  - delay: 150
+    content: "14:07:410\tHAR:\thar-files/2019.11.12-14.06.790/chrome-1280/1_enterprise.har\r\n"
+  - delay: 150
+    content: "14:07:898\tURL:\thttps://github.com/enterprise\r\n"
+  - delay: 150
+    content: "14:07:552\tHAR:\thar-files/2019.11.12-14.06.790/iphone-6/1_enterprise.har\r\n"
+  - delay: 150
+    content: "14:07:361\tURL:\thttps://github.com/trending\r\n"
+  - delay: 150
+    content: "14:08:150\tHAR:\thar-files/2019.11.12-14.06.790/chrome-1280/2_trending.har\r\n"
+  - delay: 150
+    content: "14:08:110\tURL:\thttps://github.com/trending\r\n"
+  - delay: 150
+    content: "14:08:642\tHAR:\thar-files/2019.11.12-14.06.790/iphone-6/2_trending.har\r\n"
+  - delay: 50
+    content: "14:08:681\t----------- Proccess finished. Elapsed time: 00:01:17 -----------\r\n14:08:681\tFiles saved at: har-files/2019.11.12-14.06.790\r\n\r\n"
+  - delay: 50
+    content: "\e]7;file://nalmeida/Users/nicalmei/Work/perfcheck\a"
+  - delay: 50
+    content: "\e[0;31m⚡\e[m\e[01;34m ~/Work/perfcheck\e[35m master* \e[01;30m$\e[00m "
+  - delay: 2000
+    content: 'n'
+  - delay: 50
+    content: o
+  - delay: 50
+    content: d
+  - delay: 50
+    content: e
+  - delay: 50
+    content: ' '
+  - delay: 50
+    content: p
+  - delay: 50
+    content: e
+  - delay: 50
+    content: r
+  - delay: 50
+    content: f
+  - delay: 50
+    content: c
+  - delay: 50
+    content: h
+  - delay: 50
+    content: e
+  - delay: 50
+    content: c
+  - delay: 50
+    content: k
+  - delay: 50
+    content: ' '
+  - delay: 50
+    content: '-'
+  - delay: 50
+    content: '-'
+  - delay: 50
+    content: h
+  - delay: 50
+    content: a
+  - delay: 50
+    content: r
+  - delay: 50
+    content: f
+  - delay: 50
+    content: o
+  - delay: 50
+    content: l
+  - delay: 50
+    content: d
+  - delay: 50
+    content: e
+  - delay: 50
+    content: r
+  - delay: 50
+    content: ' '
+  - delay: 50
+    content: .
+  - delay: 50
+    content: /
+  - delay: 50
+    content: h
+  - delay: 50
+    content: a
+  - delay: 50
+    content: r
+  - delay: 50
+    content: '-files/'
+  - delay: 50
+    content: '2019.11.12-14.06.790/'
+  - delay: 50
+    content: "\r\n"
+  - delay: 2000
+    content: "Rules\r\n-----\r\n 1. Your page must return response status 200\r\n 2. All your assets must load with no errors (status < 400)\r\n 3. All images must be lighter than 250 kb\r\n-----\r\n\r\nchrome-1280\r\n-----------\r\n"
+  - delay: 2000
+    content: "\e[31m✘ [3]\e[0m https://github.com/\r\n\e[31m┃ [3] \e[0mlightImages - All images must be lighter than 250 kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/mgm-resorts/hero.jpg\r\n\e[31m┃      \e[0m  size: 313,11 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/spotify/spotifyhero.jpg\r\n\e[31m┃      \e[0m  size: 565,40 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/kris-nova/hero.jpg\r\n\e[31m┃      \e[0m  size: 292,61 Kb\r\n\e[31m┗ \e[0m\r\n"
+  - delay: 500
+    content: "\e[31m✘ [4]\e[0m https://github.com/enterprise\r\n\e[31m┃ [4] \e[0mlightImages - All images must be lighter than 250 kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/mgm-resorts/hero.jpg\r\n\e[31m┃      \e[0m  size: 313,30 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/kris-nova/hero.jpg\r\n\e[31m┃      \e[0m  size: 292,60 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/mailchimp/hero.jpg\r\n\e[31m┃      \e[0m  size: 337,58 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/skyscanner/office-1.jpg\r\n\e[31m┃      \e[0m  size: 312,84 Kb\r\n\e[31m┗ \e[0m\r\n"
+  - delay: 500
+    content: "\e[32m✔\e[0m https://github.com/trending\r\n\r\niphone-6\r\n--------\r\n"
+  - delay: 500
+    content: "\e[31m✘ [3]\e[0m https://github.com/\r\n\e[31m┃ [3] \e[0mlightImages - All images must be lighter than 250 kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/mgm-resorts/hero.jpg\r\n\e[31m┃      \e[0m  size: 313,23 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/spotify/spotifyhero.jpg\r\n\e[31m┃      \e[0m  size: 565,57 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/kris-nova/hero.jpg\r\n\e[31m┃      \e[0m  size: 292,59 Kb\r\n\e[31m┗ \e[0m\r\n"
+  - delay: 500
+    content: "\e[31m✘ [4]\e[0m https://github.com/enterprise\r\n\e[31m┃ [4] \e[0mlightImages - All images must be lighter than 250 kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/mgm-resorts/hero.jpg\r\n\e[31m┃      \e[0m  size: 313,12 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/kris-nova/hero.jpg\r\n\e[31m┃      \e[0m  size: 292,58 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/mailchimp/hero.jpg\r\n\e[31m┃      \e[0m  size: 337,69 Kb\r\n\e[31m┃      \e[0murl: https://customer-stories-feed.github.com/customer_stories/skyscanner/office-1.jpg\r\n\e[31m┃      \e[0m  size: 312,81 Kb\r\n\e[31m┗ \e[0m\r\n"
+  - delay: 500
+    content: "\e[32m✔\e[0m https://github.com/trending\r\n"
+  - delay: 500
+    content: "\e]7;file://nalmeida/Users/nicalmei/Work/perfcheck\a"
+  - delay: 500
+    content: "\e[0;31m⚡\e[m\e[01;34m ~/Work/perfcheck\e[35m master* \e[01;30m$\e[00m "
+  - delay: 3000
+    content: "# DONE!"
+  - delay: 3000
+    content: "\r\n"
